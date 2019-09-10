@@ -59,36 +59,27 @@
 
         <v-app-bar
                 :clipped-left="$vuetify.breakpoint.lgAndUp"
-                app
-                color="blue darken-3"
-                dark>
-            <v-toolbar-title
-                    style="width: 300px"
+                app                  
+                color="grey lighten-2"
+                white
+               
+        >
+            <!-- <v-toolbar-title
+                    style="width:150px"
                     class="ml-0 pl-3">
                 <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-                <span class="hidden-sm-and-down">SE ERP</span>
-            </v-toolbar-title>
-            <!--<v-text-field-->
-                    <!--flat-->
-                    <!--solo-inverted-->
-                    <!--hide-details-->
-                    <!--prepend-inner-icon="fas fa-search"-->
-                    <!--label="Search"-->
-                    <!--class="hidden-sm-and-down"-->
-            <!--&gt;</v-text-field>-->
+               
+            </v-toolbar-title> -->
+            <h3><span class="hidden-sm-and-down mr-6">Tutoring School</span></h3>
             <v-spacer></v-spacer>
-            <v-btn icon>
-                <v-icon>fas fa-th</v-icon>
-            </v-btn>
-            <v-btn icon>
-                <v-icon>fas fa-bell</v-icon>
-            </v-btn>
-
+            
             <v-menu offset-y>
+                
                 <template v-slot:activator="{ on }">
                     <v-btn icon large v-on="on">
+                        
                         <v-avatar size="32px" item>
-                            <v-img src="https://cdn.vuetifyjs.com/images/logos/logo.svg" alt="Vuetify">
+                            <v-img src="https://cdn1.iconfinder.com/data/icons/materia-arrows-symbols-vol-3/24/018_128_arrow_exit_logout-512.png" alt="logout">
                             </v-img>
                         </v-avatar>
                     </v-btn>
@@ -117,7 +108,7 @@
     export default {
         name: "home-template",
         data: () => ({
-            drawer: false,
+            // drawer: false,
         }),
         computed: {
             user: sync('auth/user')

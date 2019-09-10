@@ -148,7 +148,8 @@ export default {
             }
         },
         loginWithGoogle: async function () {
-            let authCode = await this.$gAuth.getAuthCode();
+           
+           let authCode = await this.$gAuth.getAuthCode();
             await dispatch('auth/loginWithGoogle', {
                 code: authCode
             });
@@ -159,7 +160,7 @@ export default {
                     name: 'admin-home'
                 })
             }
-
+    
         },
     }
 

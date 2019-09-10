@@ -25,7 +25,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 import GAuth from 'vue-google-oauth2'
 const gauthOption = {
-    clientId: '1027299201170-1r2idq0l56adbuvk0c4sbfm9bsn3khoj.apps.googleusercontent.com',
+    clientId: '446814467433-h6u2d43stgrm29drcsp4elt9o9gsfolh.apps.googleusercontent.com',
     scope: 'profile email openid',
     prompt: 'select_account'
 }
